@@ -1,0 +1,133 @@
+body {
+    background: #ffeef7;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+}
+
+#map-container {
+  width: 80%;
+  max-width: 1100px;
+  background: white;
+  margin-top: 40px;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(214, 51, 132, 0.15);
+}
+
+#title {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #d14e8a;
+}
+
+.slider-container {
+  width: 350px;
+  margin: 10px auto 15px auto;
+  text-align: center;
+  font-weight: 600;
+  color: #d14e8a;
+}
+
+#slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 8px;
+  border-radius: 4px;
+  background: #ffd5e8;
+  outline: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+#slider:hover {
+  background: #f4b8d3;
+}
+
+#slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #d14e8a;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 0 5px rgba(214, 51, 132, 0.4);
+  transition: transform 0.2s ease;
+}
+
+#slider::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+}
+
+#year {
+  display: block;
+  margin-top: 4px; /* baisser pour que ce soit + fin */
+  margin-bottom: 10px; /* rapproche de la légende */
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.tooltip {
+  position: absolute;
+  background: #fff0fa;
+  border: 1px solid #d14e8a;
+  padding: 7px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  pointer-events: none;
+  opacity: 0.95;
+  color: #d14e8a;
+  box-shadow: 0 2px 5px rgba(214, 51, 132, 0.15);
+
+}
+
+.hidden {
+  display: none;
+}
+
+svg {
+  display: block;
+  margin: 0 auto;
+}
+
+#svg-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: -30px; /* à changer pour augmenter la carte */
+}
+
+.legend {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #d63384; 
+}
+
+#legend-title {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  color: #d14e8a
+}
+
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.legend-color {
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  border: 1px solid #d6338433;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🎀 Miryam's TP3</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3-array@3"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3-geo@3"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3-geo-projection@4"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="map-container">
+
+      <div id="title">Répartition des DEEE par département 🎀</div>
+
+      <div class="slider-container">
+        <input id="slider" type="range" value="0" min="0" max="6" step="1" />
+        <span id="year">year</span>
+      </div>
+        <br>
+      <div id="legend-title">Tonnage DEEE</div>
+      <div class="legend">
+        <div class="legend-item">
+          <span class="legend-color" style="background:#fff0f5;"></span> Très faible
+        </div>
+        <div class="legend-item">
+          <span class="legend-color" style="background:#f8c9dd;"></span> Faible
+        </div>
+        <div class="legend-item">
+          <span class="legend-color" style="background:#ee92c3;"></span> Moyen
+        </div>
+        <div class="legend-item">
+          <span class="legend-color" style="background:#d85a9c;"></span> Élevé
+        </div>
+        <div class="legend-item">
+          <span class="legend-color" style="background:#d63384;"></span> Très élevé
+        </div>
+      </div>
+
+      <!-- Le SVG sera injecté ici -->
+      <div id="svg-wrapper"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
